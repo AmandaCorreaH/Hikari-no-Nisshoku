@@ -8,7 +8,7 @@
 
 ## Sobre o projeto.
 
-"Ele foi feito apenas com <b>HTML</b> e <b>CSS</b>, possui algumas animaçoes, seu design é minimalista com cores vibrantes de vermelho, preto e branco."
+"Ele foi feito apenas com <b>HTML</b> e <b>CSS</b>, possui algumas animaçoes, seu design é minimalista com cores vibrantes de vermelho, preto e branco. Suas imagens foram geradas por <b>IA</b>"
 
 <br>
 
@@ -22,4 +22,4 @@
 
 <p>O projeto pode ser visualizo aqui []()</p>
 
-![Projeto](https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/0138b352e496628a2fb443eb77a9cf2ca317fc88/d3e745904ef22e961fdfc35efc208b4b0909098d)
+![Projeto](/assets/thumbnail.png)
