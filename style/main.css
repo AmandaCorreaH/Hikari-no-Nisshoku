@@ -1,0 +1,139 @@
+main{
+    margin-block: 2rem 4rem;
+
+    & .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        height: 35rem;
+        
+        
+
+        & .title{
+            position: relative;
+            padding-inline: 1.2rem;
+            border-bottom: 2px solid var(--brand-red-dark);
+            background-color: var(--shape-background);
+
+            animation: toBottom 700ms ease 1s backwards;
+
+        }
+        .title img{
+            position: absolute;
+            width: 6rem;
+            right: 1.1rem;
+            
+        }
+
+        .title-content{
+            padding-top: 17rem;
+
+            & span{
+                font: 600 1rem/120% "satoshi";
+                padding-bottom: 0.8rem;
+            }
+
+           & h1{
+            font: 700 2.5rem/120% "satoshi";
+            padding-bottom: 0.8rem;
+            }
+
+            & p{
+                font: 500 1rem/120% "satoshi";
+                padding-bottom: 0.8rem;
+            }
+        }
+
+        .image-card{
+            background: url(/assets/Group\ 1.png) no-repeat top/cover;
+            animation: toTop 1000ms ease 1.5s backwards;
+        }
+
+
+        .coutdown{
+            padding: 7rem 1.1rem;
+            border-bottom: 2px solid var(--brand-red-dark);
+            background-color: var(--shape-background);
+            animation: toBottom 700ms ease 2s backwards;
+
+            & .count-container{
+                display: flex;
+                align-items: center;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            & .count{
+                display: grid;
+                gap: 3.75rem;
+
+                p{
+                    font: 500 3rem/90% "satoshi";
+                    position: relative;
+                }
+
+                p::before{
+                    position: absolute;
+                    content: "";
+                    height: 3rem;
+                    width: 3px;
+                    background-color: var(--brand-red-dark);
+                }
+            }
+
+            .paragraph {
+                transform: rotate(90deg);
+
+                font: 700 1.5rem/120% "satoshi";
+                text-transform: uppercase;
+
+                & span{
+                    color: var(--brand-red-dark);
+                }
+            }
+        }
+        
+        & .btn-count{
+            padding-top: 2.1rem;
+            text-align: center;
+
+            button{
+                border: 0;
+                padding: 0.7rem 4rem;
+                text-transform: uppercase;
+                font: 700 1.1rem/120% "satoshi";
+
+                background-color: var(--brand-red-dark);
+                color: var(--text-color-white);
+            }
+        }
+    }
+}
+
+
+@keyframes toBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes toTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,46 @@
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 8.3rem;
+    background-color: var(--brand-red-dark);
+
+    & ul{
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+
+        & li a{
+            font: 500 0.7rem/120% "satoshi";
+            text-transform: uppercase;
+            color: var(--text-color-white);
+        }
+    }
+}
+
+.bottom{
+    display: grid;
+    align-items: center;
+    justify-content: end;
+
+    padding: 1.5rem 8.3rem;
+    background-color: var(--brand-red-mid);
+
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    li a{
+        font: 500 0.7rem/120% "satoshi";
+        color: var(--text-color-white);
+        text-transform: uppercase;
+    }
+
+    & li:nth-child(5){
+        width: 2px;
+        height: 1.1rem;
+        background-color: var(--text-color-white);
+    }
+}

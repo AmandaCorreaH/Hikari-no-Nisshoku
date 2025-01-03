@@ -1,0 +1,67 @@
+.character{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 900px 580px;
+
+    & .characters{
+        padding-block: 5.6rem;
+        background: url(/assets/character\ background-linear.png) no-repeat center/cover;
+
+        display: flex;
+        align-items: center;
+        gap: 6.5rem;
+    }
+
+    & .img-characters{
+        padding-left: 1rem;
+    }
+
+    & .img-characters  div{
+        margin-bottom: 1.3rem;
+        width: 10.1rem;
+        height: 4.6rem;
+        background-color: var(--shape-background);
+        transition: 120ms ease-in;
+    }
+
+    & .img-characters img{
+       max-width: 100%;
+    }
+
+    & .img-characters:hover div{
+        opacity: 0.7;
+     }
+    & .img-characters div:hover{
+        transform: scale(1.1);
+        opacity: 1;
+     }
+
+     
+     .biografy{
+        width: 100%;
+        padding: 2.1rem 3.8rem;
+
+        color: var(--text-color-white);
+        background-color: var(--gray-background);
+     }
+
+     .introdution{
+           
+        div span{
+            display: inline-block;
+            padding-bottom: 1rem;
+        }
+        div h3{
+            font: 600 2.2rem/120% "satoshi";
+            padding-bottom: 1rem;
+        }
+        div p{
+            padding-bottom: 1rem;
+        }
+
+        .info-wrapper{
+            display: flex;
+            gap: 7rem;
+        }
+     }
+}

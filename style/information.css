@@ -1,0 +1,81 @@
+#history{
+    scroll-behavior: smooth;
+}
+
+.about{
+    margin-top: 8rem;
+
+    & .divisible{
+        display: flex;
+    }
+
+    aside{
+        padding: 1.25rem 5.3rem;
+        background-color: var(--shape-background);
+         ul{
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+
+            li{
+                font: 600 1rem/120% "satoshi";
+                text-transform: uppercase;
+            }
+         }
+
+         span{
+            display: inline-block;
+            position: relative;
+            padding-bottom: 2rem;
+         }
+         span::before{
+            position: absolute;
+            content: "";
+            width: 4.3rem;
+            height: 2px;
+            background-color: var(--brand-red-dark);
+         }
+
+        .first-text{
+            padding-bottom: 2rem;
+
+            h2{
+                font: 600 2.3rem/120% "satoshi";
+                padding-bottom: 2.1rem;
+            }
+
+            p{
+                color: var(--gray-text);
+            }
+        }
+        .second-text{
+            padding-bottom: 2rem;
+
+            h3{
+                font: 600 1.5rem/120% "satoshi";
+                padding-bottom: 2.1rem;
+            }
+
+            p{
+                color: var(--gray-text);
+            }
+        }
+
+        .third-text{
+            padding-bottom: 3.9rem;
+            color: var(--gray-text);
+        }
+
+        .btn-about{
+            text-align: center;
+
+            & button{
+                all: unset;
+                padding: 0.75rem 3.6rem;
+                background-color: #C73622;
+                color: var(--text-color-white);
+                cursor: pointer;
+            }
+        }
+    }
+}

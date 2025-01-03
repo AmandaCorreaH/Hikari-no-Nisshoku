@@ -1,0 +1,40 @@
+#gallery{
+    margin: 6.1rem;
+
+    & .gallery-container{
+        max-width: 80em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6.6rem;
+
+        & .persona-gallery{
+
+            & h3{
+                font: 600 2.2rem/120% "satoshi";
+            }
+            
+            & p{
+                font: 400 1rem/120% "satoshi";
+                padding-block: 1.5rem 2rem;
+            }
+
+            & .content-images{
+                display: grid;
+                grid-template-columns: 18rem 18rem;
+                gap: 1rem;
+            }
+
+            a{
+                display: block;
+                padding-top: 2rem;
+                color: var(--gray-text);
+            }
+
+            a:hover{
+                color: var(--brand-red-mid);
+            }
+        }
+    }
+}

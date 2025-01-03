@@ -1,0 +1,45 @@
+footer{
+    padding: 3rem 5rem;
+    background-color: var(--brand-red-mid);
+
+    & .details{
+        display: flex;
+        align-items: center;
+        gap: 5.1rem;
+        justify-content: center;
+
+        & .social-links{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                display: flex;
+                align-items: center;
+                width: 1.5rem;
+            }
+        }
+
+        ul{
+            display: flex;
+            gap: 3rem;
+
+            & li a{
+                color: var(--text-color-white);
+            }
+        }
+    }
+
+    & .space{
+        width: 79rem;
+        height: 3px;
+        margin-block: 2.5rem 1.3rem;
+        background-color: var(--shape-background);
+    }
+
+    p{
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--text-color-white);
+    }
+}

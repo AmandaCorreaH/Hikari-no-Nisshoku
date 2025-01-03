@@ -1,0 +1,75 @@
+.lead{
+    margin: 6rem;
+    height: 600px;
+    
+    display: flex;
+    
+    & .leads-warn{
+        display: flex;
+        padding: 2.6rem;
+        max-width: 40rem;
+        background-color: var(--shape-background);
+
+        div{
+            margin: auto;
+
+            & h4{
+                font: 700 2rem/120% "satoshi";
+
+                padding-bottom: 1.1rem;
+                position: relative;
+            }
+
+            & h4::before {
+                content: 'NÃO PERCA ESTE MOMENTO !';
+                position: absolute;
+                top: -23px;
+                color: transparent;
+                -webkit-text-stroke: 1px black;
+                z-index: 1;
+              }
+
+            & p{
+                font: 400 1rem/120% "satoshi";
+                color: var(--gray-text);
+            }
+        }
+    }
+
+    .leads-capture{
+        background: url(/assets/Group\ 13.png) no-repeat;
+        display: flex;
+        padding: 2.6rem;
+        width: 40rem;
+
+        & .input-box{
+            margin: auto;
+            width: 31rem;
+            padding: 3.8rem;
+            background-color: var(--brand-red-mid);
+        }
+
+        & .input-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+
+            & input{
+                padding: 0.8rem;
+                outline: none;
+                font: 500 1.1rem/120% "satoshi";
+                background-color: var(--shape-background);
+                border: none;
+                outline: none;
+            }
+            
+            & button{
+                all: unset;
+                padding: 0.8rem;
+                background-color: var(--shape-background);
+                font: 700 1.1rem/120% "satoshi";
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+*,
+ *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box
+}
+
+:root{
+    /*color*/
+    --shape-background: #FAF9F3;
+    --text-color-white: #ECE9E9;
+    --text-color-black: #100E0D;
+    --color-heading: #070706;
+    --brand-red-dark: #B60B0B;
+    --brand-red-mid: #DD1B00;
+    --gray-text: #515151;
+    --gray-background: #828B8F;
+
+}
+
+body{
+    font-family: "satoshi", sans-serif;
+    color: var(--text-color-black);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    --max-width: 1280px;
+    width: min(var(--max-width), 100% - 2rem * 2);
+    margin: auto;
+}
