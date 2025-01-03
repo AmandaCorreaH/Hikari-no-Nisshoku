@@ -20,6 +20,6 @@
 
 # Visualização
 
-<p>O projeto pode ser visualizo aqui []()</p>
+<p>O projeto pode ser visualizado no navegador [aqui](https://hikari-no-nisshoku.vercel.app)</p>
 
 ![Projeto](/assets/thumbnail.png)
