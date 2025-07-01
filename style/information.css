@@ -10,19 +10,33 @@
     }
 
     aside{
-        padding: 1.25rem 5.3rem;
+        
+        padding: 1.2rem 5.3rem 1.2rem 5rem;
         background-color: var(--shape-background);
-         ul{
+
+        & .tab{
+            padding-bottom: 2rem;
             display: flex;
             gap: 1.5rem;
-            padding-bottom: 2rem;
 
-            li{
-                font: 600 1rem/120% "satoshi";
+            & button{
+                all: unset;
+                font: 600 120%/1rem "inter";
                 text-transform: uppercase;
+                cursor: pointer;
             }
-         }
+        }
 
+        .content{
+            display: none;
+        }
+        
+        .content.show{
+            display: initial;
+            animation: slowShow 0.5s ease-in;
+        }
+
+    }         
          span{
             display: inline-block;
             position: relative;
@@ -77,5 +91,13 @@
                 cursor: pointer;
             }
         }
+}
+
+@keyframes slowShow {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }

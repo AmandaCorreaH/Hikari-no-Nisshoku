@@ -37,3 +37,15 @@ ul{
     width: min(var(--max-width), 100% - 2rem * 2);
     margin: auto;
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #DD1B00;
+  }

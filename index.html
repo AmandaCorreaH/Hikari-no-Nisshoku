@@ -74,36 +74,88 @@
             </section>
         </div>
     </main>
-    <section class="about">
+    <section class="about container">
         <div class="divisible">
             <aside>
-                <ul>
-                    <li>Historia</li>
-                    <li>ambiente</li>
-                    <li>inimigos</li>
-                    <li>curiosidade</li>
-                </ul>
-                <span></span>
-                <div class="first-text">
+                <div class="tab">
+                    <button class="tab-btn" content-id="initial">Historia</button>
+                    <button class="tab-btn" content-id="environment">ambiente</button>
+                    <button class="tab-btn" content-id="enemies">inimigos</button>
+                    <button class="tab-btn" content-id="curiosity">curiosidade</button>
+                </div class="tab">
+            <div class="tab-content">
+                <div class="content show" id="initial">
+                  <span></span>
+                  <div class="first-text" >
                     <h2>Hikari no Nisshoku</h2>
                     <p>A cada 10 anos, um eclipse cósmico se abate sobre o mundo de Lumea, cobrindo o céu de sombras por um ano inteiro. Durante este período, as "Bestas das Trevas" emergem de fissuras nas sombras, trazendo destruição e terror. Esses seres não podem ser derrotados com armas convencionais, forçando a humanidade a se abrigar em cidades fortificadas e protegidas por poderosas simbolos ancestrais criadas por uma ordem mística esquecida.</p>
-                </div>
-                <div class="second-text">
+                  </div>
+                  <div class="second-text">
                     <h3>Aquela que começara a jornada</h3>
                     <p>Willow sempre se sentiu deslocada, carregando o estigma de ser uma "Filha do Eclipse". Quando as bestas das trevas começam a invadir as barreiras de proteção da cidade, a verdadeira natureza de seu poder desperta. Ela descobre que podera portar sua espada de prata reluzente finalmente para poder tomar a vida daqueles que foram tomadas a canalizar as sombras, manipular a escuridão que todos temem. No entanto, manipular-los vem com um grande risco: cada vez que ele utiliza seus poderes, uma parte de sua humanidade é consumida pela escuridão.</p>
-                </div>
-                <span></span>
-                <p class="third-text">Ao lado de Linri, outra jovem guerreira orfã, e Orum, um Guardião da Luz renegado, Kael parte em uma jornada para desvendar o segredo por trás do eclipse. Eles descobrem que o fenômeno não é apenas um evento natural, mas uma maldição lançada há séculos por uma entidade sombria conhecida como o "Soberano das Sombras", que deseja retornar e submergir o mundo em uma noite eterna.</p>
-                <div class="btn-about">
+                  </div>
+                  <span></span>
+                  <p class="third-text">Ao lado de Linri, outra jovem guerreira orfã, e Orum, um Guardião da Luz renegado, Kael parte em uma jornada para desvendar o segredo por trás do eclipse. Eles descobrem que o fenômeno não é apenas um evento natural, mas uma maldição lançada há séculos por uma entidade sombria conhecida como o "Soberano das Sombras", que deseja retornar e submergir o mundo em uma noite eterna.</p>
+                  <div class="btn-about">
                     <button>CONHEÇA O LUGAR</button>
+                  </div>
                 </div>
+                <div class="content" id="environment">
+                  <span></span>
+                  <div class="first-text" >
+                    <h2>Hikari no Nisshoku</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque minus dolor numquam sapiente inventore ad consequatur asperiores ex! Et doloribus deserunt adipisci magni, impedit aut beatae placeat harum recusandae culpa!</p>
+                  </div>
+                  <div class="second-text">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi aut quos provident harum odit asperiores odio dolores! Aspernatur</p>
+                  </div>
+                  <span></span>
+                  <p class="third-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="btn-about">
+                    <button>CONHEÇA O AMBIENTE</button>
+                  </div>
+                </div>
+                <div class="content" id="enemies">
+                  <span></span>
+                  <div class="first-text" >
+                    <h2>Hikari no Nisshoku</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque minus dolor numquam sapiente inventore ad consequatur asperiores ex! Et doloribus deserunt adipisci</p>
+                  </div>
+                  <div class="second-text">
+                    <h3>Lorem dolor</h3>
+                    <p>Lorem adipisicing elit. Impedit commodi aut quos provident harum odit asperiores odio dolores! Aspernatur</p>
+                  </div>
+                  <span></span>
+                  <p class="third-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="btn-about">
+                    <button>CONHEÇA O AMBIENTE</button>
+                  </div>
+                </div>
+                <div class="content" id="curiosity">
+                  <span></span>
+                  <div class="first-text" >
+                    <h2>Hikari no Nisshoku</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur Et doloribus deserunt adipisci magni, impedit aut beatae placeat harum recusandae culpa!</p>
+                  </div>
+                  <div class="second-text">
+                    <h3>ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi aut quos provident harum odit asperiores odio dolores! Aspernatur</p>
+                  </div>
+                  <span></span>
+                  <p class="third-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <div class="btn-about">
+                    <button>CONHEÇA O AMBIENTE</button>
+                  </div>
+                </div>
+            </div>
             </aside>
             <div class="img-ilustration">
                 <img src="assets/Mask group.png" alt="">
             </div>
         </div>
     </section>
-    <section class="character">
+    <section class="character container">
         <div class="characters">
             <div class="img-characters">
                 <div><img src="assets/willow.png" alt="imagem de willow"></div>
@@ -141,7 +193,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery">
+    <section id="gallery" class="container">
         <div class="gallery-container">
         <div class="persona-gallery">
             <h3>Personalize-se antes do <br> eclipse</h3>
@@ -161,7 +213,7 @@
        </div>
     </section>
 
-    <div class="lead">
+    <div class="lead container">
         <div class="leads-warn">
             <div>
             <h4>NÃO PERCA ESTE MOMENTO !</h4>
@@ -197,5 +249,6 @@
         <div class="space"></div>
         <p>©2024 redmoon, Inc.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

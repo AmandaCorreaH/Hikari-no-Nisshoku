@@ -15,7 +15,7 @@ main{
             border-bottom: 2px solid var(--brand-red-dark);
             background-color: var(--shape-background);
 
-            animation: toBottom 700ms ease 1s backwards;
+            animation: toBottom 500ms ease 1s backwards;
 
         }
         .title img{
@@ -46,7 +46,7 @@ main{
 
         .image-card{
             background: url(/assets/Group\ 1.png) no-repeat top/cover;
-            animation: toTop 1000ms ease 1.5s backwards;
+            animation: toTop 700ms ease 1.5s backwards;
         }
 
 
@@ -54,7 +54,7 @@ main{
             padding: 7rem 1.1rem;
             border-bottom: 2px solid var(--brand-red-dark);
             background-color: var(--shape-background);
-            animation: toBottom 700ms ease 2s backwards;
+            animation: toBottom 500ms ease 2s backwards;
 
             & .count-container{
                 display: flex;
