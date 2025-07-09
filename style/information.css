@@ -8,17 +8,16 @@
     & .divisible{
         display: flex;
     }
-
+    
     aside{
-        
         padding: 1.2rem 5.3rem 1.2rem 5rem;
         background-color: var(--shape-background);
-
+        
         & .tab{
             padding-bottom: 2rem;
             display: flex;
             gap: 1.5rem;
-
+            
             & button{
                 all: unset;
                 font: 600 120%/1rem "inter";
@@ -26,7 +25,7 @@
                 cursor: pointer;
             }
         }
-
+        
         .content{
             display: none;
         }
@@ -35,62 +34,66 @@
             display: initial;
             animation: slowShow 0.5s ease-in;
         }
-
+        
     }         
-         span{
-            display: inline-block;
-            position: relative;
-            padding-bottom: 2rem;
-         }
-         span::before{
-            position: absolute;
-            content: "";
-            width: 4.3rem;
-            height: 2px;
-            background-color: var(--brand-red-dark);
-         }
-
-        .first-text{
-            padding-bottom: 2rem;
-
-            h2{
-                font: 600 2.3rem/120% "satoshi";
-                padding-bottom: 2.1rem;
-            }
-
-            p{
-                color: var(--gray-text);
-            }
+    span{
+        display: inline-block;
+        position: relative;
+        padding-bottom: 2rem;
+    }
+    span::before{
+        position: absolute;
+        content: "";
+        width: 4.3rem;
+        height: 2px;
+        background-color: var(--brand-red-dark);
+    }
+    
+    .first-text{
+        padding-bottom: 2rem;
+        
+        h2{
+            font: 600 2.3rem/120% "satoshi";
+            padding-bottom: 2.1rem;
         }
-        .second-text{
-            padding-bottom: 2rem;
-
-            h3{
-                font: 600 1.5rem/120% "satoshi";
-                padding-bottom: 2.1rem;
-            }
-
-            p{
-                color: var(--gray-text);
-            }
-        }
-
-        .third-text{
-            padding-bottom: 3.9rem;
+        
+        p{
             color: var(--gray-text);
         }
-
-        .btn-about{
-            text-align: center;
-
-            & button{
-                all: unset;
-                padding: 0.75rem 3.6rem;
-                background-color: #C73622;
-                color: var(--text-color-white);
-                cursor: pointer;
-            }
+    }
+    .second-text{
+        padding-bottom: 2rem;
+        
+        h3{
+            font: 600 1.5rem/120% "satoshi";
+            padding-bottom: 2.1rem;
         }
+        
+        p{
+            color: var(--gray-text);
+        }
+    }
+    
+    .third-text{
+        padding-bottom: 3.9rem;
+        color: var(--gray-text);
+    }
+    
+    .btn-about{
+        text-align: center;
+        
+        & button{
+            all: unset;
+            padding: 0.75rem 3.6rem;
+            background-color: #C73622;
+            color: var(--text-color-white);
+            cursor: pointer;
+        }
+    }
+
+}
+.img-ilustration img{
+    width: 700px;
 }
 
 @keyframes slowShow {

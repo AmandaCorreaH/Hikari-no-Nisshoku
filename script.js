@@ -43,3 +43,32 @@ function tabCliked(tab) {
 
     content.classList.add("show")
 }
+
+
+const btnCharacters = document.querySelectorAll(".btn-character")
+
+btnCharacters.forEach(tabs => tabs.addEventListener('click', () =>{
+  biografy(tabs)
+}))
+
+function biografy(tabs){
+  try{
+    const characterContents = document.querySelectorAll(".character-content")
+
+    characterContents.forEach(characterContent => characterContent.classList.remove("show"))
+    const personaId = tabs.getAttribute("content-id")
+
+     // Mostra visual e bio com base no mesmo content-id
+    const visual = document.getElementById(`${personaId}-visual`);
+    const bio = document.getElementById(`${personaId}-bio`);
+
+    if (visual) visual.classList.add("show");
+    else console.error("Visual não encontrado:", personaId);
+
+    if (bio) bio.classList.add("show");
+    else console.error("Biografia não encontrada:", personaId);
+
+  } catch(error){
+    console.log("algo deu errado!", error)
+  }
+}
